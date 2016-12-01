@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="170dp"
+
+    android:background="?attr/colorPrimary"
+    android:padding="5dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark" android:orientation="vertical"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/navigationHeader"
+        android:layout_height="match_parent"
+        android:clickable="true"
+
+        android:weightSum="1">
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="120dp"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/login_icon" android:id="@+id/imageView" />
+
+        <TextView
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="58dp"
+            android:text="Welcome To REUZ"
+            android:id="@+id/userNameTV"
+            android:textSize="25dp"
+            android:layout_weight="0.82"
+            android:textAlignment="center"
+            android:textColor="#fffefe" />
+    </LinearLayout>
+
+</LinearLayout>
